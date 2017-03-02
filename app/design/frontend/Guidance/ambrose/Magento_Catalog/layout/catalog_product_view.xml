@@ -2,5 +2,12 @@
     <body>
         <move element="product.info.stock.sku" destination="product.info.price" after="product.price.final"/>
         <move element="product.info.review" destination="product.info.main" before="product.info.price"/>
+        <referenceContainer name="footer">
+            <block class="Magento\Cms\Block\Block" name="example.staticblock">
+                <arguments>
+                    <argument name="block_id" xsi:type="string">example</argument>
+                </arguments>
+            </block>
+        </referenceContainer>
     </body>
 </page>
